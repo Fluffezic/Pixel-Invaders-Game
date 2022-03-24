@@ -529,7 +529,7 @@ function Enemyshoot() {
 }
 }
 function ResetShip() {
-	document.getElementById("ship").src = "char.png";
+	document.getElementById("ship").src = "Char.png";
 }
 function GameOver() {
 
