@@ -601,6 +601,7 @@ function PauseCooldownEnd() {
 }
 function PauseGame() {
 	if(IsPaused == false) {
+		IsPaused = true;
 	clearInterval(int1);
 	clearInterval(int2);
 	clearInterval(int3);
@@ -612,9 +613,10 @@ function PauseGame() {
 	clearInterval(int9);
 	clearInterval(int10);
 		document.getElementById("PauseScreen").style.display = "block";
-		IsPaused = true;
+		
 	}
 	else if(IsPaused == true) {
+		IsPaused = false;
 		int1 = setInterval(Move, 1);
 		int2 = setInterval(Shoot, 1);
 		int3 = setInterval(Special, 1);
@@ -626,6 +628,6 @@ function PauseGame() {
 		 int9 = setInterval(MoveEnemy2, 3000);
 		 int10 = setInterval(Enemyshoot, 1000);
 	document.getElementById("PauseScreen").style.display = "none";
-		IsPaused = false;
+		
 	}
 }
