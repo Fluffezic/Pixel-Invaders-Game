@@ -358,7 +358,9 @@ function CollisiondetectEnemy() {
 	setTimeout(ResetShip, 300)
 	if(Lives == 0) {
 			document.getElementById("Maintheme").pause();
+		if(Musicon == true || SoundFXon == true) {
 	document.getElementById("GameOverFX").play();
+		}
 	document.getElementById("GameOverScreen").style.display = "block";
 	document.getElementById("GameOverText").innerHTML = "Game Over" + "<br>" + "Your score Is: " + Score + "!" + "<br>" + "Would you like to Retry?";
 		setTimeout(GameOver, 100);
