@@ -247,7 +247,7 @@ function Collisiondetect() {
 if (Bulletnumber > 0 && Enemynumber > 0) {
 	for(var i = 0; i < Enemynumber; i++) {
 		for(var j = 0; j < Bulletnumber; j++) {
-		if(((BulletPosx[j]) < EnemyPosx[i] + 1.4) && ((BulletPosx[j] + 2.5)> EnemyPosx[i]) && (BulletPosy[j] < EnemyPosy[i] + 48) && ((BulletPosy[j] + 24) > EnemyPosy[i])) {
+		if(((BulletPosx[j]) < EnemyPosx[i] + 1.5) && ((BulletPosx[j] + 2.5)> EnemyPosx[i]) && (BulletPosy[j] < EnemyPosy[i] + 48) && ((BulletPosy[j] + 24) > EnemyPosy[i])) {
 			console.log("hit registered");
 			if(SoundFXon == true) {
 				document.getElementById("HitEnemy").pause();
