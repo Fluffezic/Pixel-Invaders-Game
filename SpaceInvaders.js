@@ -601,10 +601,6 @@ function PauseCooldownEnd() {
 }
 function PauseGame() {
 	if(IsPaused == false) {
-	if(Musicon == true) {
-document.getElementById("Maintheme").pause();
-		}
-		IsPaused = true;
 	clearInterval(int1);
 	clearInterval(int2);
 	clearInterval(int3);
@@ -618,10 +614,6 @@ document.getElementById("Maintheme").pause();
 		document.getElementById("PauseScreen").style.display = "block";
 	}
 	else if(IsPaused == true) {
-		if(Musicon == true) {
-			document.getElementById("Maintheme").play();
-		}
-		IsPaused = false;
 		int1 = setInterval(Move, 1);
 		int2 = setInterval(Shoot, 1);
 		int3 = setInterval(Special, 1);
