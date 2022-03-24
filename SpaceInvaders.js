@@ -612,7 +612,7 @@ function PauseGame() {
 	clearInterval(int9);
 	clearInterval(int10);
 		document.getElementById("PauseScreen").style.display = "block";
-		isPaused = true;
+		IsPaused = true;
 	}
 	else if(IsPaused == true) {
 		int1 = setInterval(Move, 1);
