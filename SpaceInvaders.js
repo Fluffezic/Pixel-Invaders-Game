@@ -51,6 +51,9 @@ var IsPaused = false;
 var PausePress = false;
 var PauseCooldown = false;
 var Pxposit = Position + "%";
+
+
+
 function onload() {
 	setupInputs()
 setTimeout(SetupEnemy, 500);
